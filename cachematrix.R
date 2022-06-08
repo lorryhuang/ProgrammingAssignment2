@@ -34,16 +34,3 @@ cacheSolve <- function(x, ...) {
     x$set_mat_inv(r)
     r
 }
-
-
-# testing
-my1 <- matrix(9:6, 2, 2)
-my1
-
-my2 <- makeCacheMatrix(my1)
-my2
-
-my3 <- cacheSolve(my2)
-my3
-
-my1 %*% my3
